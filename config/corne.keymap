@@ -25,7 +25,7 @@
         };
 
         conditional_layers {
-                compatible = "zmk,conditional_layers";
+                compatible = "zmk,conditional-layers";
                 tri_layer {
                         if-layers = <1 2>;
                         then-layer = <3>;
@@ -61,12 +61,12 @@
 //    ├───────────┼────────────┼────────┼────────┼────────┼────────┤                         ├─────────┼──────────┼───────────┼───────────┼───────────┼──────────┤
 //    │ &kp LCTRL │ &kp INT_RO │ &trans │ &trans │ &trans │ &trans │                         │ &kp DEL │ &kp HOME │ &kp PG_DN │ &kp PG_UP │  &kp END  │  &kp #   │
 //    └───────────┴────────────┴────────┴────────┼────────┼────────┼───────────┐   ┌─────────┼─────────┼──────────┼───────────┴───────────┴───────────┴──────────┘
-//                                               │ &trans │ &trans │ &kp SPACE │   │ &kp RET │ &trans  │  &trans  │                                               
+//                                               │ &trans │ &trans │ &kp SPACE │   │ &kp RET │ &trans  │ &kp RALT │                                               
 //                                               └────────┴────────┴───────────┘   └─────────┴─────────┴──────────┘                                               
   &kp TAB     &kp N1       &kp N2   &kp N3   &kp N4   &kp N5                             &kp N6    &kp N7     &kp N8      &kp N9      &kp N0      &kp BSPC
   &kp LSHFT   &trans       &trans   &trans   &trans   &trans                             &kp INS   &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &kp RBKT
   &kp LCTRL   &kp INT_RO   &trans   &trans   &trans   &trans                             &kp DEL   &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &kp BSLH
-                                             &trans   &trans   &kp SPACE       &kp RET   &trans    &kp RALT                                                 
+                                             &trans   &trans   &kp SPACE       &kp RET   &trans    &kp RALT                                               
                         >;
                 };
 
@@ -75,7 +75,7 @@
 //    ┌──────────┬────────┬──────────┬──────────┬──────────┬──────────┐                         ┌────────┬────────┬────────┬────────┬─────────┬─────────────┐
 //    │ &kp NUBS │ &kp F1 │  &kp F2  │  &kp F3  │  &kp F4  │  &kp F5  │                         │ &kp F6 │ &kp F7 │ &kp F8 │ &kp F9 │ &kp F10 │ &kp C_POWER │
 //    ├──────────┼────────┼──────────┼──────────┼──────────┼──────────┤                         ├────────┼────────┼────────┼────────┼─────────┼─────────────┤
-//    │  &kp lt  │ &kp gt │ &kp LPAR │ &kp RPAR │ &kp LBRC │ &kp RBRC │                         │ &trans │ &trans │ &trans │ &trans │ &trans  │   &trans    │
+//    │  &kp LT  │ &kp GT │ &kp LPAR │ &kp RPAR │ &kp LBRC │ &kp RBRC │                         │ &trans │ &trans │ &trans │ &trans │ &trans  │   &trans    │
 //    ├──────────┼────────┼──────────┼──────────┼──────────┼──────────┤                         ├────────┼────────┼────────┼────────┼─────────┼─────────────┤
 //    │  &trans  │ &trans │  &trans  │  &trans  │  &trans  │  &trans  │                         │ &trans │ &trans │ &trans │ &trans │ &trans  │   &trans    │
 //    └──────────┴────────┴──────────┴──────────┼──────────┼──────────┼───────────┐   ┌─────────┼────────┼────────┼────────┴────────┴─────────┴─────────────┘
