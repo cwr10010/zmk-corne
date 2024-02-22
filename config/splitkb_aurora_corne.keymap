@@ -12,8 +12,8 @@
 
 #define MAC_LBKT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_5_AND_PERCENT)))
 #define MAC_RBKT (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_6_AND_CARE)))
-#define MAC_LBRC (DE_LBKT)
-#define MAC_RBRC (DE_RBKT)
+#define MAC_LBRC (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_8_AND_ASTERISK))
+#define MAC_RBRC (RA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_9_AND_LEFT_PARENTHESIS))
 / {
         behaviors {
                 ht: hold_tap {
@@ -77,19 +77,19 @@
 
                 raise_layer {
                         bindings = <
-//    ┌─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┐                         ┌────────┬────────┬────────┬────────┬─────────┬─────────────┐
-//    │  &kp NUBS   │   &kp F1    │   &kp F2    │   &kp F3    │   &kp F4    │   &kp F5    │                         │ &kp F6 │ &kp F7 │ &kp F8 │ &kp F9 │ &kp F10 │ &kp C_POWER │
-//    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                         ├────────┼────────┼────────┼────────┼─────────┼─────────────┤
-//    │ &kp DE_LBKT │ &kp DE_RBKT │ &kp DE_LPAR │ &kp DE_RPAR │ &kp DE_LBRC │ &kp DE_RBRC │                         │ &trans │ &trans │ &trans │ &trans │ &trans  │   &trans    │
-//    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                         ├────────┼────────┼────────┼────────┼─────────┼─────────────┤
-//    │   &trans    │   &trans    │   &trans    │   &trans    │   &trans    │   &trans    │                         │ &trans │ &trans │ &trans │ &trans │ &trans  │   &trans    │
-//    └─────────────┴─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼───────────┐   ┌─────────┼────────┼────────┼────────┴────────┴─────────┴─────────────┘
-//                                                            │   &trans    │   &trans    │ &kp SPACE │   │ &kp RET │ &trans │ &trans │                                          
-//                                                            └─────────────┴─────────────┴───────────┘   └─────────┴────────┴────────┘                                          
-  &kp NUBS      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10   &kp C_POWER
+//    ┌──────────────┬──────────────┬─────────────┬─────────────┬──────────────┬──────────────┐                         ┌────────┬────────┬────────┬────────┬─────────┬─────────────┐
+//    │   &kp NUBS   │    &kp F1    │   &kp F2    │   &kp F3    │    &kp F4    │    &kp F5    │                         │ &kp F6 │ &kp F7 │ &kp F8 │ &kp F9 │ &kp F10 │ &kp C_POWER │
+//    ├──────────────┼──────────────┼─────────────┼─────────────┼──────────────┼──────────────┤                         ├────────┼────────┼────────┼────────┼─────────┼─────────────┤
+//    │ &kp MAC_LBRC │ &kp MAC_RBRC │ &kp DE_LPAR │ &kp DE_RPAR │ &kp MAC_LBKT │ &kp MAC_RBKT │                         │ &trans │ &trans │ &trans │ &trans │ &trans  │   &trans    │
+//    ├──────────────┼──────────────┼─────────────┼─────────────┼──────────────┼──────────────┤                         ├────────┼────────┼────────┼────────┼─────────┼─────────────┤
+//    │    &trans    │    &trans    │   &trans    │   &trans    │    &trans    │    &trans    │                         │ &trans │ &trans │ &trans │ &trans │ &trans  │   &trans    │
+//    └──────────────┴──────────────┴─────────────┴─────────────┼──────────────┼──────────────┼───────────┐   ┌─────────┼────────┼────────┼────────┴────────┴─────────┴─────────────┘
+//                                                              │    &trans    │    &trans    │ &kp SPACE │   │ &kp RET │ &trans │ &trans │                                          
+//                                                              └──────────────┴──────────────┴───────────┘   └─────────┴────────┴────────┘                                          
+  &kp NUBS       &kp F1         &kp F2        &kp F3        &kp F4         &kp F5                                   &kp F6   &kp F7   &kp F8   &kp F9   &kp F10   &kp C_POWER
   &kp MAC_LBRC   &kp MAC_RBRC   &kp DE_LPAR   &kp DE_RPAR   &kp MAC_LBKT   &kp MAC_RBKT                             &trans   &trans   &trans   &trans   &trans    &trans     
-  &trans        &trans        &trans        &trans        &trans        &trans                                  &trans   &trans   &trans   &trans   &trans    &trans     
-                                                          &trans        &trans        &kp SPACE       &kp RET   &trans   &trans                                          
+  &trans         &trans         &trans        &trans        &trans         &trans                                   &trans   &trans   &trans   &trans   &trans    &trans     
+                                                            &trans         &trans         &kp SPACE       &kp RET   &trans   &trans                                          
                         >;
                 };
 
