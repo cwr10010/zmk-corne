@@ -56,16 +56,16 @@
                 lower_layer {
                         bindings = <
 //    ┌─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────┐                         ┌───────────────┬───────────────┬───────────────┬───────────────┬──────────────────┬─────────────────┐
-//    │     &kp TAB     │  &kp OSX_DE_N1  │  &kp OSX_DE_N2  │  &kp OSX_DE_N3  │  &kp OSX_DE_N4  │  &kp OSX_DE_N5  │                         │ &kp OSX_DE_N6 │ &kp OSX_DE_N7 │ &kp OSX_DE_N8 │ &kp OSX_DE_N9 │  &kp OSX_DE_N0   │    &kp BSPC     │
+//    │     &kp TAB     │  &kp OSX_DE_N1  │  &kp OSX_DE_N2  │  &kp OSX_DE_N3  │  &kp OSX_DE_N4  │  &kp OSX_DE_N5  │                         │ &kp OSX_DE_N6 │ &kp OSX_DE_N7 │ &kp OSX_DE_N8 │ &kp OSX_DE_N9 │  &kp OSX_DE_N0   │  &kp OSX_DE_SZ  │
 //    ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤                         ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────────┼─────────────────┤
-//    │ &kp OSX_DE_LBKT │ &kp OSX_DE_RBKT │ &kp OSX_DE_LPAR │ &kp OSX_DE_RPAR │ &kp OSX_DE_LBRC │ &kp OSX_DE_RBRC │                         │    &trans     │    &trans     │    &trans     │ &kp OSX_DE_SZ │ &kp OSX_DE_ACUTE │ &kp OSX_DE_PLUS │
+//    │ &kp OSX_DE_LBKT │ &kp OSX_DE_RBKT │ &kp OSX_DE_LPAR │ &kp OSX_DE_RPAR │ &kp OSX_DE_LBRC │ &kp OSX_DE_RBRC │                         │    &trans     │    &trans     │    &trans     │    &trans     │ &kp OSX_DE_ACUTE │ &kp OSX_DE_PLUS │
 //    ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤                         ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────────┼─────────────────┤
 //    │    &kp LSHFT    │  &kp OSX_DE_LT  │  &kp OSX_DE_GT  │ &kp OSX_DE_BSLH │ &kp OSX_DE_PIPE │ &kp OSX_DE_FSLH │                         │    &trans     │    &trans     │    &trans     │    &trans     │      &trans      │ &kp OSX_DE_HASH │
 //    └─────────────────┴─────────────────┴─────────────────┴─────────────────┼─────────────────┼─────────────────┼───────────┐   ┌─────────┼───────────────┼───────────────┼───────────────┴───────────────┴──────────────────┴─────────────────┘
 //                                                                            │     &trans      │     &trans      │ &kp SPACE │   │ &kp RET │    &trans     │    &trans     │                                                                     
 //                                                                            └─────────────────┴─────────────────┴───────────┘   └─────────┴───────────────┴───────────────┘                                                                     
-  &kp TAB           &kp OSX_DE_N1     &kp OSX_DE_N2     &kp OSX_DE_N3     &kp OSX_DE_N4     &kp OSX_DE_N5                               &kp OSX_DE_N6   &kp OSX_DE_N7   &kp OSX_DE_N8   &kp OSX_DE_N9   &kp OSX_DE_N0      &kp BSPC       
-  &kp OSX_DE_LBKT   &kp OSX_DE_RBKT   &kp OSX_DE_LPAR   &kp OSX_DE_RPAR   &kp OSX_DE_LBRC   &kp OSX_DE_RBRC                             &trans          &trans          &trans          &kp OSX_DE_SZ   &kp OSX_DE_ACUTE   &kp OSX_DE_PLUS
+  &kp TAB           &kp OSX_DE_N1     &kp OSX_DE_N2     &kp OSX_DE_N3     &kp OSX_DE_N4     &kp OSX_DE_N5                               &kp OSX_DE_N6   &kp OSX_DE_N7   &kp OSX_DE_N8   &kp OSX_DE_N9   &kp OSX_DE_N0      &kp OSX_DE_SZ  
+  &kp OSX_DE_LBKT   &kp OSX_DE_RBKT   &kp OSX_DE_LPAR   &kp OSX_DE_RPAR   &kp OSX_DE_LBRC   &kp OSX_DE_RBRC                             &trans          &trans          &trans          &trans          &kp OSX_DE_ACUTE   &kp OSX_DE_PLUS
   &kp LSHFT         &kp OSX_DE_LT     &kp OSX_DE_GT     &kp OSX_DE_BSLH   &kp OSX_DE_PIPE   &kp OSX_DE_FSLH                             &trans          &trans          &trans          &trans          &trans             &kp OSX_DE_HASH
                                                                           &trans            &trans            &kp SPACE       &kp RET   &trans          &trans                                                                            
                         >;
@@ -73,19 +73,19 @@
 
                 raise_layer {
                         bindings = <
-//    ┌──────────┬────────┬────────┬────────┬────────┬────────┐                         ┌──────────┬─────────────┬───────────┬───────────┬─────────┬──────────┐
-//    │ &kp NUBS │ &kp F1 │ &kp F2 │ &kp F3 │ &kp F4 │ &kp F5 │                         │  &kp F6  │   &kp F7    │  &kp F8   │  &kp F9   │ &kp F10 │ &kp BSPC │
-//    ├──────────┼────────┼────────┼────────┼────────┼────────┤                         ├──────────┼─────────────┼───────────┼───────────┼─────────┼──────────┤
-//    │  &trans  │ &trans │ &trans │ &trans │ &trans │ &trans │                         │ &kp LEFT │  &kp DOWN   │  &kp UP   │ &kp RIGHT │  &none  │ &kp INS  │
-//    ├──────────┼────────┼────────┼────────┼────────┼────────┤                         ├──────────┼─────────────┼───────────┼───────────┼─────────┼──────────┤
-//    │  &trans  │ &trans │ &trans │ &trans │ &trans │ &trans │                         │ &kp HOME │  &kp PG_DN  │ &kp PG_UP │  &kp END  │  &none  │ &kp DEL  │
-//    └──────────┴────────┴────────┴────────┼────────┼────────┼───────────┐   ┌─────────┼──────────┼─────────────┼───────────┴───────────┴─────────┴──────────┘
-//                                          │ &trans │ &trans │ &kp SPACE │   │ &kp RET │  &trans  │ &kp C_POWER │                                             
-//                                          └────────┴────────┴───────────┘   └─────────┴──────────┴─────────────┘                                             
-  &kp NUBS   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                             &kp F6     &kp F7        &kp F8      &kp F9      &kp F10   &kp BSPC
-  &trans     &trans   &trans   &trans   &trans   &trans                             &kp LEFT   &kp DOWN      &kp UP      &kp RIGHT   &none     &kp INS 
-  &trans     &trans   &trans   &trans   &trans   &trans                             &kp HOME   &kp PG_DN     &kp PG_UP   &kp END     &none     &kp DEL 
-                                        &trans   &trans   &kp SPACE       &kp RET   &trans     &kp C_POWER                                             
+//    ┌──────────┬────────┬────────┬────────┬────────┬────────┐                         ┌──────────┬───────────┬───────────┬───────────┬─────────┬──────────┐
+//    │ &kp NUBS │ &kp F1 │ &kp F2 │ &kp F3 │ &kp F4 │ &kp F5 │                         │  &kp F6  │  &kp F7   │  &kp F8   │  &kp F9   │ &kp F10 │ &kp BSPC │
+//    ├──────────┼────────┼────────┼────────┼────────┼────────┤                         ├──────────┼───────────┼───────────┼───────────┼─────────┼──────────┤
+//    │  &trans  │ &trans │ &trans │ &trans │ &trans │ &trans │                         │ &kp LEFT │ &kp DOWN  │  &kp UP   │ &kp RIGHT │  &none  │ &kp INS  │
+//    ├──────────┼────────┼────────┼────────┼────────┼────────┤                         ├──────────┼───────────┼───────────┼───────────┼─────────┼──────────┤
+//    │  &trans  │ &trans │ &trans │ &trans │ &trans │ &trans │                         │ &kp HOME │ &kp PG_DN │ &kp PG_UP │  &kp END  │  &none  │ &kp DEL  │
+//    └──────────┴────────┴────────┴────────┼────────┼────────┼───────────┐   ┌─────────┼──────────┼───────────┼───────────┴───────────┴─────────┴──────────┘
+//                                          │ &trans │ &trans │ &kp SPACE │   │ &kp RET │  &trans  │  &trans   │                                             
+//                                          └────────┴────────┴───────────┘   └─────────┴──────────┴───────────┘                                             
+  &kp NUBS   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                             &kp F6     &kp F7      &kp F8      &kp F9      &kp F10   &kp BSPC
+  &trans     &trans   &trans   &trans   &trans   &trans                             &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &none     &kp INS 
+  &trans     &trans   &trans   &trans   &trans   &trans                             &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &none     &kp DEL 
+                                        &trans   &trans   &kp SPACE       &kp RET   &trans     &trans                                                
                         >;
                 };
 
@@ -102,7 +102,7 @@
 //                                                                └──────────────┴──────────────┴───────────┘   └─────────┴──────────┴────────────┘                                                      
   &kp ESC        &kp C_BRI_DN   &kp C_BRI_UP   &trans         &trans         &trans                                   &kp C_RW   &kp C_PLAY   &kp C_FF   &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP
   &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                             &trans     &trans       &trans     &trans       &trans         &trans      
-  &out OUT_TOG   &trans         &trans         &trans         &trans         &trans                                   &trans     &trans       &trans     &trans       &trans         &trans      
+  &out OUT_TOG   &trans         &trans         &trans         &trans         &trans                                   &trans     &trans       &trans     &trans       &trans         &kp C_POWER      
                                                               &trans         &trans         &kp SPACE       &kp RET   &trans     &trans                                                          
                         >;
                 };
